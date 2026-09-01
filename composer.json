@@ -1,6 +1,6 @@
 {
     "name": "yourname/noteforge",
-    "description": "NoteForge - a lightweight Laravel-style notes manager (v1.0.1 hotfix)",
+    "description": "NoteForge - a lightweight Laravel-style notes manager (v1.1, includes 1.0.1 hotfix)",
     "type": "project",
     "require": {
         "php": "^8.1",

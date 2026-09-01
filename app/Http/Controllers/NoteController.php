@@ -42,3 +42,8 @@ class NoteController extends Controller
         return view('notes.index', compact('notes'));
     }
 }
+
+// TEMP DEBUG - remove before release
+function debug_dump() {
+    error_log("DEBUG: this should not be here");
+}

@@ -30,4 +30,15 @@ class NoteController extends Controller
         $note->delete();
         return redirect()->route('notes.index');
     }
+
+    public function search(Request $request)
+    {
+        $keyword = $request->query('q', '');
+        $notes = Note::where('title', 'like', "%{$keyword}%")
+            ->orWhere('body', 'like', "%{$keyword}%")
+            ->latest()
+            ->get();
+
+        return view('notes.index', compact('notes'));
+    }
 }

@@ -1,0 +1,6 @@
+#!/usr/bin/env php
+<?php
+// NoteForge artisan entry point (Laravel-style CLI bootstrap).
+require __DIR__.'/bootstrap/app.php';
+
+echo "NoteForge artisan CLI - run php artisan list for available commands\n";

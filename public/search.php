@@ -1,11 +1,16 @@
 <?php
-// Filter Feature - conflicting version
+// Combined Search & Filter Feature - Resolved
+function searchNotes($query) {
+    return "Searching: " . $query;
+}
 function filterNotes($query) {
-    // TODO: add filter logic
     return "Filtering: " . $query;
 }
 ?>
-<input type="text" placeholder="Filter notes..." />
-<button>Filter</button>
-<h2>Advanced Filter</h2>
-<p>This is filter version</p>
+<div class="search-filter">
+    <input type="text" placeholder="Search notes..." />
+    <input type="text" placeholder="Filter notes..." />
+    <button>Search</button>
+    <button>Filter</button>
+</div>
+<p>Both search and filter features merged</p>
